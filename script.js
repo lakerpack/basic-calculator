@@ -21,8 +21,8 @@ function difference(...nums) {
 
 function product(...nums) {
     let product = 1;
-    for (let i = 0; i < nums[0].length; i++){
-      product *= (nums[0])[i];
+    for (let i = 0; i < nums.length; i++){
+      product *= nums[i];
     }
     return product;
 };
