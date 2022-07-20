@@ -1,3 +1,18 @@
 ul {
     list-style-type: none;
 }
+
+body{
+    align-content: center;
+}
+
+.body{
+    display: grid;
+    justify-content: center;
+    grid-template: 20px 20px;
+    align-items: center;
+}
+
+.numbers{
+    display: grid;
+}
