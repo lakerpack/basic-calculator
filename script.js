@@ -6,7 +6,7 @@ const sum = function(...nums) {
   return sum;
 };
 
-const subtract = function(...nums) {
+const difference = function(...nums) {
 	let difference = 0;
   for (let num in nums){
     if (num == 0){
@@ -19,3 +19,11 @@ const subtract = function(...nums) {
   return difference;
 };
 
+const product = function(...nums) {
+    let product = 1;
+    for (let i = 0; i < nums[0].length; i++){
+      product *= (nums[0])[i];
+    }
+    return product;
+  };
+  
