@@ -5,3 +5,17 @@ const sum = function(...nums) {
   }
   return sum;
 };
+
+const subtract = function(...nums) {
+	let difference = 0;
+  for (let num in nums){
+    if (num == 0){
+      difference += nums[num];
+    }
+    else{
+      difference -= nums[num];
+    }
+  }
+  return difference;
+};
+
