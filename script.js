@@ -25,5 +25,5 @@ const product = function(...nums) {
       product *= (nums[0])[i];
     }
     return product;
-  };
-  
+};
+
