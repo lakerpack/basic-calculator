@@ -26,9 +26,20 @@ body{
 .body{
     display: grid;
     grid-template-areas: 
-    "a"
-    "b b c"
-    "b b c";
+    "top top top top"
+    "first first second second";
     justify-content: center;
     align-items: center;
+}
+
+.display{
+    grid-area: top;
+}
+
+.numbers{
+    grid-area: first;
+}
+
+.operators{
+    grid-area: second;
 }
