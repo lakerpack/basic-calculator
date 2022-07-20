@@ -1,6 +1,9 @@
 ul {
     list-style-type: none;
     display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .numbers ul {
@@ -29,7 +32,10 @@ body{
     "top top top top"
     "first first second second";
     justify-content: center;
+    text-align: end;
     align-items: center;
+    background-color: palegoldenrod;
+    padding: 20px;
 }
 
 .display{
