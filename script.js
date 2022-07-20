@@ -26,3 +26,11 @@ function product(...nums) {
     }
     return product;
 };
+
+function quotient(...nums){
+    let quotient = nums[0];
+    for (let i = 1; i < nums[0].length; i++){
+        quotient /= (nums[0])[i];
+    }
+    return quotient;
+}
