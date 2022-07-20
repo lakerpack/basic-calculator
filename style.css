@@ -1,10 +1,22 @@
 ul {
     list-style-type: none;
     display: grid;
+}
+
+.numbers ul {
     grid-template-areas: 
-    "a a a"
-    "b c c"
-    "b c c";
+    "a a a a"
+    "b b b b"
+    "c c c c"
+    "d d d d";
+}
+
+.operators ul {
+    grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    "d";
 }
 
 body{
@@ -14,9 +26,9 @@ body{
 .body{
     display: grid;
     grid-template-areas: 
-    "a a a"
-    "b c c"
-    "b c c";
+    "a"
+    "b b c"
+    "b b c";
     justify-content: center;
     align-items: center;
 }
