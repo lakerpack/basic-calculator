@@ -30,7 +30,7 @@ function product(...nums) {
 function quotient(...nums){
     let quotient = nums[0];
     for (let i = 1; i < nums.length; i++){
-        quotient /= nums[0][i];
+        quotient /= nums[i];
     }
     return quotient;
 }
