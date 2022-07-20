@@ -1,4 +1,4 @@
-const sum = function(...nums) {
+function sum(...nums) {
   let sum = 0;
   for (let i = 0; i < nums[0].length; i++){
     sum += (nums[0])[i];
@@ -6,7 +6,7 @@ const sum = function(...nums) {
   return sum;
 };
 
-const difference = function(...nums) {
+function difference(...nums) {
 	let difference = 0;
   for (let num in nums){
     if (num == 0){
@@ -19,11 +19,10 @@ const difference = function(...nums) {
   return difference;
 };
 
-const product = function(...nums) {
+function product(...nums) {
     let product = 1;
     for (let i = 0; i < nums[0].length; i++){
       product *= (nums[0])[i];
     }
     return product;
 };
-
