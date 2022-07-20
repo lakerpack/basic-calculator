@@ -1,7 +1,7 @@
 function sum(...nums) {
   let sum = 0;
-  for (let i = 0; i < nums[0].length; i++){
-    sum += (nums[0])[i];
+  for (let i = 0; i < nums.length; i++){
+    sum += nums[i];
   }
   return sum;
 };
