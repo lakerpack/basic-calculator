@@ -34,3 +34,23 @@ function quotient(...nums){
     }
     return quotient;
 }
+
+function operate(op, ...nums){
+    switch(op){
+        case add:
+            return sum(...nums);
+            break;
+        case subtract:
+            return difference(...nums);
+            break;
+        case multiply:
+            return product(...nums);
+            break;
+        case divide:
+            return quotient(...nums);
+            break;
+        default:
+            return "ERROR";
+            break;
+    }
+}
