@@ -27,15 +27,65 @@ button{
 .lefthalf{
     display: grid;
     grid-template-areas: 
-    "6 7 8 9"
-    "3 4 5 ."
-    "0 1 2 =";
+    "six seven eight nine"
+    "three four five dot"
+    "zero one two equal";
     justify-content: center;
     align-items: center;
 }
 
 .numbers{
     display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
+}
+
+.righthalf{
+    display: flex;
+    flex-direction: column;
+}
+
+#dot{
+    grid-area: dot;
+}
+
+#equal{
+    grid-area: equal;
+}
+
+#one{
+    grid-area: one;
+}
+
+#two{
+    grid-area: two;
+}
+
+#three{
+    grid-area: three;
+}
+
+#four{
+    grid-area: four;
+}
+
+#five{
+    grid-area: five;
+}
+
+#six{
+    grid-area: six;
+}
+
+#seven{
+    grid-area: seven;
+}
+
+#eight{
+    grid-area: eight;
+}
+
+#nine{
+    grid-area: nine;
 }
