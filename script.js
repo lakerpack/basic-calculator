@@ -35,19 +35,19 @@ function quotient(...nums){
     return quotient;
 }
 
-function operate(op, ...nums){
+function operate(op, first, second){
     switch(op){
         case add:
-            return sum(...nums);
+            return sum(first ,second);
             break;
         case subtract:
-            return difference(...nums);
+            return difference(first ,second);
             break;
         case multiply:
-            return product(...nums);
+            return product(first ,second);
             break;
         case divide:
-            return quotient(...nums);
+            return quotient(first ,second);
             break;
         default:
             return "ERROR";
