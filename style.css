@@ -44,28 +44,3 @@ button{
     padding: 40px;
     margin: 0px;
 }
-
-.display, .numbers, .operators{
-    background-color: palegoldenrod;
-    margin: 0px;
-    padding-top: 40px;
-}
-
-.display{
-    display: flex;
-    justify-content: end;
-    grid-area: top;
-    padding: 40px;
-}
-
-.numbers{
-    display: flex;
-    flex-direction: column;
-    grid-area: first;
-}
-
-.operators{
-    display: flex;
-    flex-direction: column;
-    grid-area: second;
-}
