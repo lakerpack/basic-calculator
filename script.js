@@ -56,13 +56,14 @@ function operate(op, ...nums){
 }
 
 buttons = document.querySelectorAll("button");
-buttons.foreach(button => {
+buttons.forEach(button => {
     button.addEventListener('click', () => {
         att = button.getAttribute('id');
-        let num;
+        let num = "";
         let nums = ["zero","one","two","three","four","five","six","seven","eight","nine","dot"];
-        if(att in nums){
-            
+        if(nums.includes(att)){
+            num += button.textContent;
         }
+        console.log(num);
     })
 })
