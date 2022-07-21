@@ -1,4 +1,5 @@
 function sum(...nums) {
+  console.log(nums);
   let sum = 0;
   for (let i = 0; i < nums.length; i++){
     sum += nums[i];
@@ -69,7 +70,7 @@ function parse(line){
         if((line.charAt(i) == " ") && !(line.charAt(i+1) == "=") && (line.charAt(i+2) == " ") && line.charAt(i+3)){
             op = line.charAt(i+1);
             first = line.slice(0,i);
-            second = line.slice(i+2);
+            second = line.slice(i+3);
             const result = [op, first, second];
             return result;
         }
