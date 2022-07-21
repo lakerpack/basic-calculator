@@ -37,7 +37,9 @@ function quotient(...nums){
 
 function operate(){
     results = parse(num);
-    switch(op){
+    if(!results) return console.log("Invalid line");
+    console.log("Success");
+/*     switch(op){
         case add:
             return sum(first ,second);
             break;
@@ -53,7 +55,7 @@ function operate(){
         default:
             return "ERROR";
             break;
-    }
+    } */
 }
 
 function parse(line){
@@ -61,14 +63,14 @@ function parse(line){
     let first;
     let second;
     for(let i = 0; i < line.length; i++){
-        if((line.charAt(i) == " ") && !(line.charAt(i+1) == "=") && (line.charAt(i+2) == " ")){
+        if((line.charAt(i) == " ") && !(line.charAt(i+1) == "=") && (line.charAt(i+2) == " ") && line.charAt(i+3)){
             op = line.charAt(i+1);
             first = line.slice(0,i);
             second = line.slice(i+2);
-            break;
+            return op, first, second;
         }
     }
-    return op, first, second;
+    return false;
 }
 
 function updateDisplay(){
@@ -94,7 +96,7 @@ buttons.forEach(button => {
         else if(spec.includes(att)){
             switch(att){
                 case "equal":
-                    parse(num);
+                    operate();
                     break;
                 case "delete":
                     if((num.charAt(num.length-1) == " ") && (num.charAt(num.length-3) == " ")){
