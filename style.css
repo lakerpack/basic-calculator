@@ -57,6 +57,11 @@ button{
     flex-direction: column;
 }
 
+.end{
+    margin-top: 25px;
+    font-size: 10px;
+}
+
 #dot{
     grid-area: dot;
 }
