@@ -55,6 +55,7 @@ function operate(op, ...nums){
     }
 }
 
+let math = "";
 let num = "";
 
 buttons = document.querySelectorAll("button");
