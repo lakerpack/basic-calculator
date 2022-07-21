@@ -39,8 +39,10 @@ function operate(){
     results = parse(num);
     console.log(results);
     if(!results) return;
-    
-/*     switch(op){
+    const op = result[0];
+    const first = result[1];
+    const second = result[2];
+    switch(op){
         case add:
             return sum(first ,second);
             break;
@@ -56,7 +58,7 @@ function operate(){
         default:
             return "ERROR";
             break;
-    } */
+    }
 }
 
 function parse(line){
