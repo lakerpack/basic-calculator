@@ -37,8 +37,9 @@ function quotient(...nums){
 
 function operate(){
     results = parse(num);
-    if(!results) return console.log("Invalid line");
-    console.log("Success");
+    console.log(results);
+    if(!results) return;
+    
 /*     switch(op){
         case add:
             return sum(first ,second);
@@ -67,7 +68,8 @@ function parse(line){
             op = line.charAt(i+1);
             first = line.slice(0,i);
             second = line.slice(i+2);
-            return op, first, second;
+            const result = [op, first, second];
+            return result;
         }
     }
     return false;
