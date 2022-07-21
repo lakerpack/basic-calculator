@@ -54,3 +54,8 @@ function operate(op, ...nums){
             break;
     }
 }
+
+buttons = document.querySelectorAll("button");
+buttons.foreach(button => {
+    
+})
