@@ -55,11 +55,12 @@ function operate(op, ...nums){
     }
 }
 
+let num = "";
+
 buttons = document.querySelectorAll("button");
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         att = button.getAttribute('id');
-        let num = "";
         let nums = ["zero","one","two","three","four","five","six","seven","eight","nine","dot"];
         if(nums.includes(att)){
             num += button.textContent;
