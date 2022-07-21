@@ -55,6 +55,21 @@ function operate(op, first, second){
     }
 }
 
+function parse(line){
+    let op;
+    let first;
+    let second;
+    for(let i = 0; i < line.length; i++){
+        if((line.charAt(i) == " ") && !(line.charAt(i+1) == "=") && (line.charAt(i+2) == " ")){
+            op = line.charAt(i+1);
+            first = line.slice(0,i);
+            second = line.slice(i+2);
+            break;
+        }
+    }
+    console.log(op, first, second);
+}
+
 function updateDisplay(){
     const display = document.querySelector('.display');
     display.textContent = num;
@@ -78,7 +93,7 @@ buttons.forEach(button => {
         else if(spec.includes(att)){
             switch(att){
                 case "equal":
-                    operate(num);
+                    parse(num);
                     break;
                 case "delete":
                     if((num.charAt(num.length-1) == " ") && (num.charAt(num.length-3) == " ")){
