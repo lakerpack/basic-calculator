@@ -59,35 +59,10 @@ buttons = document.querySelectorAll("button");
 buttons.foreach(button => {
     button.addEventListener('click', () => {
         att = button.getAttribute('id');
-        switch(att){
-            case "zero":
-                break;
-            case "one":
-                break;
-            case "two":
-                break;
-            case "three":
-                break;
-            case "four":
-                break;
-            case "five":
-                break;
-            case "six":
-                break;
-            case "seven":
-                break;
-            case "eight":
-                break;
-            case "nine":
-                break;
-            case "dot":
-                break;
-            case "equal":
-                break;
-            case "delete":
-                break;
-            case "clear":
-                break;
+        let num;
+        let nums = ["zero","one","two","three","four","five","six","seven","eight","nine","dot"];
+        if(att in nums){
+            
         }
     })
 })
