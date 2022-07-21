@@ -102,7 +102,9 @@ buttons.forEach(button => {
         }
         else if((ops.includes(att)) && !(ops.includes(num.charAt(num.length-2)))){
             if (done) done = false;
-            num += ` ${button.textContent} `
+            if (!(num.includes("+") || num.includes("-") || num.includes("x") || num.includes ("/"))){
+                num += ` ${button.textContent} `
+            }
         }
         else if(spec.includes(att)){
             switch(att){
