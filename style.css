@@ -25,6 +25,13 @@ button{
     align-items: center;
 }
 
+.display{
+    background-color: whitesmoke;
+    text-align: end;
+    width: 377.86px;
+    padding: 15px;
+}
+
 .numbers{
     padding: 15px;
     background-color: gray;
