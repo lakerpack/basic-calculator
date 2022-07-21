@@ -1,1 +1,2 @@
 This is a simple calculator project built in HTML, CSS, and Javascript for the sake of TheOdinProject curriculum. 
+I may or may not come back to this, but it's more likely that I would just rebuild something from scratch rather than finetune this in the future.
