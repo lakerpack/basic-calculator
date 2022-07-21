@@ -39,9 +39,9 @@ function operate(){
     results = parse(num);
     console.log(results);
     if(!results) return;
-    const op = result[0];
-    const first = result[1];
-    const second = result[2];
+    const op = results[0];
+    const first = results[1];
+    const second = results[2];
     switch(op){
         case add:
             return sum(first ,second);
@@ -100,7 +100,7 @@ buttons.forEach(button => {
         else if(spec.includes(att)){
             switch(att){
                 case "equal":
-                    operate();
+                    console.log((operate()));
                     break;
                 case "delete":
                     if((num.charAt(num.length-1) == " ") && (num.charAt(num.length-3) == " ")){
