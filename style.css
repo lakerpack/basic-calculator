@@ -8,7 +8,7 @@ ul {
 }
 
 body{
-    margin: 100px;
+    margin: 140px;
     align-content: center;
     background-color: peachpuff;
 }
@@ -18,7 +18,6 @@ button{
 }
 
 .body{
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,17 +27,19 @@ button{
 .display{
     background-color: whitesmoke;
     text-align: end;
-    width: 377.86px;
-    padding: 15px;
+    width: 382.86px;
+    padding: 17.5px;
+    outline-style: solid;
 }
 
 .numbers{
-    padding: 15px;
+    padding: 20px;
     background-color: gray;
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
+    outline-style: solid;
 }
 
 .lefthalf{
