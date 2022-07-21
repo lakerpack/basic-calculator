@@ -55,12 +55,17 @@ function operate(op, ...nums){
     }
 }
 
+function updateDisplay(){
+    const display = document.querySelector('.display');
+    display.textContent = num;
+}
+
 let num = "";
 
 buttons = document.querySelectorAll("button");
 buttons.forEach(button => {
     button.addEventListener('click', () => {
-        att = button.getAttribute('id');
+        const att = button.getAttribute('id');
         let nums = ["zero","one","two","three","four","five","six","seven","eight","nine","dot"];
         let ops = ["add","subtract","multiply","divide"];
         let spec = ["equal", "delete", "clear"];
@@ -86,7 +91,6 @@ buttons.forEach(button => {
         else{
             console.log("Error");
         }
-        console.log(num.slice(0, -1));
-        console.log(num);
+        updateDisplay();
     })
 })
