@@ -84,6 +84,7 @@ function updateDisplay(){
 }
 
 let num = "";
+let done = false;
 
 buttons = document.querySelectorAll("button");
 buttons.forEach(button => {
@@ -93,15 +94,24 @@ buttons.forEach(button => {
         let ops = ["add","subtract","multiply","divide","+","-","x","/"];
         let spec = ["equal", "delete", "clear"];
         if(nums.includes(att)){
+            if(done){
+                num = "";
+                done = false;
+            }
             num += button.textContent;
         }
         else if((ops.includes(att)) && !(ops.includes(num.charAt(num.length-2)))){
+            if (done) done = false;
             num += ` ${button.textContent} `
         }
         else if(spec.includes(att)){
             switch(att){
                 case "equal":
-                    console.log((operate()));
+                    let val = operate();
+                    if(val != "ERROR"){
+                        num = `${val}`;
+                        done = true;
+                    }
                     break;
                 case "delete":
                     if((num.charAt(num.length-1) == " ") && (num.charAt(num.length-3) == " ")){
