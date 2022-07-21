@@ -43,16 +43,16 @@ function operate(){
     const first = results[1];
     const second = results[2];
     switch(op){
-        case add:
+        case "+":
             return sum(first ,second);
             break;
-        case subtract:
+        case "-":
             return difference(first ,second);
             break;
-        case multiply:
+        case "x":
             return product(first ,second);
             break;
-        case divide:
+        case "/":
             return quotient(first ,second);
             break;
         default:
