@@ -1,1 +1,1 @@
-# basic-calculator
+This is a simple calculator project built in HTML, CSS, and Javascript for the sake of TheOdinProject curriculum. 
