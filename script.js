@@ -63,11 +63,22 @@ buttons.forEach(button => {
         att = button.getAttribute('id');
         let nums = ["zero","one","two","three","four","five","six","seven","eight","nine","dot"];
         let ops = ["add","subtract","multiply","divide"];
+        let spec = ["equal", "delete", "clear"];
         if(nums.includes(att)){
             num += button.textContent;
         }
         else if(ops.includes(att)){
             num += ` ${button.textContent} `
+        }
+        else if(spec.includes(att)){
+            switch(att){
+                case "equal":
+                    operate(num);
+                case "delete":
+                    num = num.slice(0,num.length);
+                case "clear":
+                    num = "";
+            }
         }
         console.log(num);
     })
