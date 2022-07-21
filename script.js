@@ -63,8 +63,12 @@ buttons.forEach(button => {
     button.addEventListener('click', () => {
         att = button.getAttribute('id');
         let nums = ["zero","one","two","three","four","five","six","seven","eight","nine","dot"];
+        let ops = ["add","subtract","multiply","divide"];
         if(nums.includes(att)){
             num += button.textContent;
+        }
+        else if(ops.includes(att)){
+            num += ` ${button.textContent} `
         }
         console.log(num);
     })
