@@ -7,22 +7,6 @@ ul {
     gap: 10px;
 }
 
-.numbers ul {
-    grid-template-areas: 
-    "a a a a"
-    "b b b b"
-    "c c c c"
-    "d d d d";
-}
-
-.operators ul {
-    grid-template-areas: 
-    "a"
-    "b"
-    "c"
-    "d";
-}
-
 body{
     align-content: center;
     background-color: peachpuff;
@@ -32,7 +16,7 @@ button{
     padding: 40px;
 }
 
-.body{
+.numbers{
     display: grid;
     grid-template-areas: 
     "top top top top"
