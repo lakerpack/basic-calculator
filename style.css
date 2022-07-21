@@ -17,6 +17,10 @@ button{
     padding: 30px;
 }
 
+.righthalf button{
+    background-color: lightblue;
+}
+
 .body{
     display: flex;
     flex-direction: column;
@@ -65,10 +69,12 @@ button{
 
 #dot{
     grid-area: dot;
+    background-color: lightgray;
 }
 
 #equal{
     grid-area: equal;
+    background-color: lightgray;
 }
 
 #one{
@@ -109,8 +115,10 @@ button{
 
 #delete{
     grid-area: delete;
+    background-color: lightgray;
 }
 
 #clear{
     grid-area: clear;
+    background-color: lightgray;
 }
