@@ -33,7 +33,7 @@ button{
 }
 
 .numbers{
-    padding: 20px;
+    padding: 40px 20px 30px 20px;
     background-color: gray;
     display: flex;
     gap: 20px;
@@ -44,7 +44,8 @@ button{
 
 .lefthalf{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
+    "delete delete clear clear" 
     "six seven eight nine"
     "three four five dot"
     "zero one two equal";
@@ -104,4 +105,12 @@ button{
 
 #nine{
     grid-area: nine;
+}
+
+#delete{
+    grid-area: delete;
+}
+
+#clear{
+    grid-area: clear;
 }
