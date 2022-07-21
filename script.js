@@ -74,12 +74,19 @@ buttons.forEach(button => {
             switch(att){
                 case "equal":
                     operate(num);
+                    break;
                 case "delete":
-                    num = num.slice(0,num.length);
+                    num = num.slice(0, -1);
+                    break;
                 case "clear":
                     num = "";
+                    break;
             }
         }
+        else{
+            console.log("Error");
+        }
+        console.log(num.slice(0, -1));
         console.log(num);
     })
 })
