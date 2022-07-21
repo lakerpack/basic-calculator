@@ -16,7 +16,14 @@ button{
     padding: 40px;
 }
 
-.numbers{
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lefthalf{
     display: grid;
     grid-template-areas: 
     "top top top top"
@@ -27,4 +34,10 @@ button{
     align-items: center;
     padding: 40px;
     margin: 0px;
+}
+
+.numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
