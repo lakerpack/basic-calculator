@@ -35,7 +35,8 @@ function quotient(...nums){
     return quotient;
 }
 
-function operate(op, first, second){
+function operate(){
+    results = parse(num);
     switch(op){
         case add:
             return sum(first ,second);
@@ -67,7 +68,7 @@ function parse(line){
             break;
         }
     }
-    console.log(op, first, second);
+    return op, first, second;
 }
 
 function updateDisplay(){
