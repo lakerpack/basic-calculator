@@ -3,6 +3,7 @@ ul {
     display: grid;
     justify-content: center;
     align-items: center;
+    align-content: center;
     gap: 10px;
 }
 
@@ -24,28 +25,47 @@ ul {
 
 body{
     align-content: center;
+    background-color: peachpuff;
+}
+
+button{
+    padding: 40px;
 }
 
 .body{
     display: grid;
     grid-template-areas: 
     "top top top top"
+    "first first second second"
+    "first first second second"
     "first first second second";
     justify-content: center;
-    text-align: end;
     align-items: center;
+    padding: 40px;
+    margin: 0px;
+}
+
+.display, .numbers, .operators{
     background-color: palegoldenrod;
-    padding: 20px;
+    margin: 0px;
+    padding-top: 40px;
 }
 
 .display{
+    display: flex;
+    justify-content: end;
     grid-area: top;
+    padding: 40px;
 }
 
 .numbers{
+    display: flex;
+    flex-direction: column;
     grid-area: first;
 }
 
 .operators{
+    display: flex;
+    flex-direction: column;
     grid-area: second;
 }
