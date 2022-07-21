@@ -67,12 +67,12 @@ buttons.forEach(button => {
     button.addEventListener('click', () => {
         const att = button.getAttribute('id');
         let nums = ["zero","one","two","three","four","five","six","seven","eight","nine","dot"];
-        let ops = ["add","subtract","multiply","divide"];
+        let ops = ["add","subtract","multiply","divide","+","-","x","/"];
         let spec = ["equal", "delete", "clear"];
         if(nums.includes(att)){
             num += button.textContent;
         }
-        else if(ops.includes(att)){
+        else if((ops.includes(att)) && !(ops.includes(num.charAt(num.length-2)))){
             num += ` ${button.textContent} `
         }
         else if(spec.includes(att)){
