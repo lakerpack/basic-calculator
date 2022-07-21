@@ -81,7 +81,12 @@ buttons.forEach(button => {
                     operate(num);
                     break;
                 case "delete":
-                    num = num.slice(0, -1);
+                    if((num.charAt(num.length-1) == " ") && (num.charAt(num.length-3) == " ")){
+                        num = num.slice(0,-3);
+                    }
+                    else{
+                        num = num.slice(0, -1);
+                    }
                     break;
                 case "clear":
                     num = "";
